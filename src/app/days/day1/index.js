@@ -4,7 +4,7 @@ import { Stack } from 'expo-router';
 
 const DayDetailsScreen = () => {
   return (
-    <View>
+    <View style={{}}>
       <Stack.Screen options={{ title: 'Day 1' }} />
 
       <Text style={{ fontFamily: 'AmaticBold', fontSize: 100 }}>

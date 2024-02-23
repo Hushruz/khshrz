@@ -29,8 +29,21 @@ export default function RootLayout() {
         return null;
       }
     return (
-        <Stack screenOptions={{}}>
-            <Stack.Screen name="index" options={{ title: 'khshrz' }} />
+        <Stack screenOptions={{  
+            headerStyle: {
+            height: 40, 
+            backgroundColor: '#1b1a19',
+           shadowColor: '#bebbb8',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.8,
+        shadowRadius: 13,
+        },
+        headerTintColor: '#bebbb8',
+        headerTitleStyle: {
+            fontWeight: 'bold',
+        },
+    }}>
+            <Stack.Screen name="index" options={{ title: 'khshrz' }} />1
         </Stack>
 
     )
@@ -39,7 +52,7 @@ export default function RootLayout() {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#fff', // Цвет фона
+        backgroundColor: '#333', // Цвет фона
         alignItems: 'center',    // Выравнивание по центру
         justifyContent: 'center' // Выравнивание по центру
     },

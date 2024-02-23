@@ -4,7 +4,7 @@ import { Link } from 'expo-router';
 
 export default function DayListItem({day}) {
    return (
-    <Link href={`/(days)/day${day}`} asChild>
+    <Link href={`/days/day${day}`} asChild>
     <Pressable style={styles.box}>
       <Text style={styles.text}>{day}</Text>
     </Pressable>
@@ -14,19 +14,19 @@ export default function DayListItem({day}) {
 const styles = StyleSheet.create({
    
     box: {
-        backgroundColor: '#F9EDE3',
+        
         flex: 1,
         aspectRatio: 1,
     
         borderWidth: StyleSheet.hairlineWidth,
-        borderColor: '#9b4521',
+        borderColor: '#605e5c',
         borderRadius: 20,
-    
+        backgroundColor:'#1b1a18',
         justifyContent: 'center',
         alignItems: 'center',
       },
       text: {
-        color: '#9b4521',
+        color: '#bebbb8',
         fontSize: 75,
         fontFamily: 'AmaticBold',
       },
